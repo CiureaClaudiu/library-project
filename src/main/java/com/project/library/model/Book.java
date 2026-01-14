@@ -14,7 +14,7 @@ public class Book {
     private String title;
     private String isbn;
     private Integer publicationYear;
-    private Integer stock; // Cate bucati avem
+    private Integer stock;
 
     @ManyToOne
     @JoinColumn(name = "author_id")
