@@ -16,9 +16,9 @@ public class BookRequest {
     @NotNull(message = "Publication year is required")
     private Integer publicationYear;
 
-    @Min(value = 1, message = "Stock must be at least 1") // Validare stoc minim
+    @Min(value = 1, message = "Stock must be at least 1")
     private Integer stock;
 
-    private Long authorId;     // Primim doar ID-ul, nu tot obiectul
+    private Long authorId;
     private Long publisherId;
 }
