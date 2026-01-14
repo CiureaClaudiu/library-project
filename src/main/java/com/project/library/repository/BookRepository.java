@@ -7,6 +7,6 @@ import java.util.List;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-    // Aici definim cautarea dupa categorie (pentru cerinta MVP)
+    // Aici definim cautarea dupa categorie
     List<Book> findByCategories_Name(String categoryName);
 }
